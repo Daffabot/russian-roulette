@@ -1,16 +1,40 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC “-//W3C//DTD XHTML 1.0 Transitional//EN” “http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd”>
+<html xmlns=”http://www.w3.org/1999/xhtml”>
 <head>
-<title>Russian Roulette by Daffabot</title>
+  <meta charset="utf-8">
+  <base href="/">
+
+<title>Russian Roulette By Daffabot</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta name="author" content="Daffabot">
+  <meta name="keywords" content="Russian Roulette">
+  <meta name="description" content="Russian Roulette By Daffabot">
 <style>
-     body{
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+  font-size: 16px;
          background-image: url(./background.jpg);
          background-size: cover;
          background-repeat: no-repeat;
          background-position: center;
          background-attachment: fixed;
-         height: 1740px;
-         width: 100%;
+     }
+     section {
+     background: #FFF;
+     width: auto;
+     height: auto;
+     border-radius: 10px;
+     display: raw;
+     flex-direction: raw;
+     gap: 10px;
+     padding: 20px;
      }
      .title{
          text-align: center;
@@ -24,22 +48,30 @@
          padding: 15px 12px;
          font-size: 50px;
          }
-     p {font-size: 50px;
-     font-family: 'VT323', monospace;
-     }
-     a {text-decoration: none;}
-     a:link {color: red;}
-     a:visited {color: green;}
-     a:hover {color: hotpink;}
-     a:active {color: blue;}
-     #bullets {font-family: 'VT323', monospace;}
-     @font-face {
-     font-family: "VT323";
-     src: url('VT323-Regular.ttf');
-     }
-     .digital {
-     font-family: "VT323";
-     }
+    @media screen and (max-width:600px){
+    .container{
+    flex-direction: column;
+    }
+    }
+    p {font-size: 1.7em;
+    font-family: 'VT323', monospace;
+    width: auto;
+    height: auto;
+    }
+    a {text-decoration: none; width: auto; height: auto;}
+    a:link {color: red;}
+    a:visited {color: green;}
+    a:hover {color: hotpink;}
+    a:active {color: blue;}
+    #bullets {font-family: 'VT323', monospace;}
+    @font-face {
+    font-family: "VT323";
+    src: url('VT323-Regular.ttf');
+    }
+    .digital {
+    font-family: "VT323";
+    }
+    html{scroll-behavior: smooth;}
      #bullets{background:#252428;color:#FFFFFF;border:1px solid #3e3949;padding:3px 10px;font-size:13px;border-radius:2px;max-width:300px;auto;margin-bottom:15px;background:#222;overflow:hidden;border-radius:20px;padding:0}
      </style>
 </head>
