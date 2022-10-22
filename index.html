@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+     <head>
 <title>Russian Roulette by Daffabot</title>
 <style>
      body{
@@ -9,8 +9,6 @@
          background-repeat: no-repeat;
          background-position: center;
          background-attachment: fixed;
-         height: 1740px;
-         width: 100%;
      }
      .title{
          text-align: center;
@@ -44,38 +42,27 @@
 </style>
 </head>
 <body>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 <font size="10" style="font-family: 'VT323', monospace;"><h1>Russian Roulette</h1></font>
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
-  <tr>
-    <td><img border="0" src="roulette.jpg" width="500px" height="500px"></td>
+  <tbody><tr>
+    <td><img border="0" src="roulette.jpg" width="100%" height="100%"></td>
     <td>
 
 <form name="fire">
-<p>Jumlah peluru yang akan dimuat (1-6):</p><br /><select name="bullets" id="bullets" type="text" size="30" value="1" style="font-size: 40px;"><option value="1" selected><p>1 Peluru</p></option>
-<option value="2"><p>2 Peluru</p></option>
-<option value="3"><p>3 Peluru</p></option>
-<option value="4"><p>4 Peluru</p></option>
-<option value="5"><p>5 Peluru</p></option>
-<option value="6"><p>6 Peluru</p></option>
+<p>Jumlah peluru yang akan dimuat (1-6):</p><br><select name="bullets" id="bullets" type="text" value="1" style="font-size: 40px;"><option value="1" selected="">1 Peluru</option>
+<option value="2">2 Peluru</option>
+<option value="3">3 Peluru</option>
+<option value="4">4 Peluru</option>
+<option value="5">5 Peluru</option>
+<option value="6">6 Peluru</option>
 </select>
-<br />
+<br>
 
 <p>
 <audio id="fireit()" src="revolver.ogg" preload="auto"></audio>
 <audio id="fail()" src="fail.ogg" preload="auto"></audio>
 <a href="javascript:play_single_sound();">
-<input class="btn" name="message" type="button" style="font-family: 'VT323', monospace;" value="Play Roulette!" onClick="fireit()"></a>
+<input class="btn" name="message" type="button" style="font-family: 'VT323', monospace;" value="Play Roulette" onclick="fireit()"></a>
 
 </p>
 
@@ -108,11 +95,12 @@ setTimeout(() => {
 }
 </script>
 
-<p align="center">Game ini dibuat oleh<br />
+<p align="center">Game ini dibuat oleh<br>
 <a href="https://github.com/Daffabot" target="_blank">Daffabot</a></p>
 
 </td>
   </tr>
-</table>
+</tbody>
+     </table>
 </body>
 </html>
