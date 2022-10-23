@@ -1,5 +1,5 @@
-# Russian-Roulette HTML
-Game russian roulette yang dikembangkan oleh Daffa Ahmad I.
+# Russian-Roulette Javascript
+Game russian roulette HTML and Javascript created and developed by Daffa Ahmad Ibrahim
 
 ![alt text](https://daffabot.github.io/russian-roulette.github.io/roulette.jpg)
 
