@@ -1,6 +1,7 @@
-<!DOCTYPE html>
-<html>
-     <head>
+<!DOCTYPE html PUBLIC “-//W3C//DTD XHTML 1.0 Transitional//EN” “http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd”>
+<html xmlns=”http://www.w3.org/1999/xhtml” lang="id">
+     <head><meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Russian Roulette by Daffabot</title>
 <style>
      body{
@@ -30,6 +31,17 @@
      a:visited {color: green;}
      a:hover {color: hotpink;}
      a:active {color: blue;}
+     font,
+     input{
+      font-family: 'VT323', monospace;
+     }
+     select#bullets {
+     color: #ffffff;
+     font-size: xx-large;
+     padding: 1rem 2rem;
+     border: 1rem solid transparent;
+     border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+     }
      #bullets {font-family: 'VT323', monospace;}
      @font-face {
      font-family: "VT323";
@@ -38,31 +50,34 @@
      .digital {
      font-family: "VT323";
      }
-     #bullets{background:#252428;color:#FFFFFF;border:1px solid #3e3949;padding:3px 10px;font-size:13px;border-radius:2px;max-width:300px;auto;margin-bottom:15px;background:#222;overflow:hidden;border-radius:20px;padding:0}
+     #bullets{background:#252428;color:#FFFFFF;border:1px solid #3e3949;padding:3px 10px;font-size:13px;border-radius:2px;max-width:300px auto;margin-bottom:15px;background:#222;overflow:hidden;border-radius:20px;padding:0}
 </style>
 </head>
 <body>
-<font size="10" style="font-family: 'VT323', monospace;"><h1>Russian Roulette</h1></font>
+<font size="10"><h1>Russian Roulette</h1></font>
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
   <tbody><tr>
-    <td><img border="0" src="roulette.jpg" width="100%" height="100%"></td>
+    <td><img border="0" src="roulette.jpg" width="100%" height="100%" alt="Revolver"></td>
     <td>
 
+      <div class="custom-select" style="width:200px;">
 <form name="fire">
-<p>Jumlah peluru yang akan dimuat (1-6):</p><br><select name="bullets" id="bullets" type="text" value="1" style="font-size: 40px;"><option value="1" selected="">1 Peluru</option>
+<p>Jumlah peluru yang akan dimuat (1-6):</p><br><select name="bullets" id="bullets" type="text" value="1" title="1"><option value="1" selected="">1 Peluru</option>
 <option value="2">2 Peluru</option>
 <option value="3">3 Peluru</option>
 <option value="4">4 Peluru</option>
 <option value="5">5 Peluru</option>
 <option value="6">6 Peluru</option>
 </select>
+</form>
+</div>
 <br>
 
 <p>
 <audio id="fireit()" src="revolver.ogg" preload="auto"></audio>
 <audio id="fail()" src="fail.ogg" preload="auto"></audio>
 <a href="javascript:play_single_sound();">
-<input class="btn" name="message" type="button" style="font-family: 'VT323', monospace;" value="Play Roulette" onclick="fireit()"></a>
+<input class="btn" name="message" type="button" value="Play Roulette" onclick="fireit()"></a>
 
 </p>
 
@@ -96,7 +111,7 @@ setTimeout(() => {
 </script>
 
 <p align="center">Game ini dibuat oleh<br>
-<a href="https://github.com/Daffabot" target="_blank">Daffabot</a></p>
+<a href="https://github.com/Daffabot" target="_blank" rel="noopener">Daffabot</a></p>
 
 </td>
   </tr>
