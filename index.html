@@ -69,20 +69,18 @@
 <option value="5">5 Peluru</option>
 <option value="6">6 Peluru</option>
 </select>
-</form>
-</div>
 <br>
 
 <p>
 <audio id="fireit()" src="revolver.ogg" preload="auto"></audio>
 <audio id="fail()" src="fail.ogg" preload="auto"></audio>
-<a href="javascript:play_single_sound();">
-<input class="btn" name="message" type="button" value="Play Roulette" onclick="fireit()"></a>
-
+<input class="btn" name="message" type="button" value="Play Roulette" onclick="fireit()">
 </p>
 
 </form>
 
+</div>
+           
 <script>
 
 //Russian Roulette Game- by Daffa Ahmad Ibrahim (https://github.com/Daffabot)
@@ -98,7 +96,7 @@ setTimeout(() => {
 }, 100)
 if (theone<=document.fire.bullets.value-1)
 setTimeout(() => {
-alert("Dor!!!. Kamu mati!").play();
+alert("Dor!!!. Kamu mati!");
 }, 500)
 else{
 document.fire.message.value="Whew. Selamat!"
