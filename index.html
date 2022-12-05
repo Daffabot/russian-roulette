@@ -5,11 +5,7 @@
 <title>Russian Roulette by Daffabot</title>
 <style>
      body{
-         background-image: url(./background.jpg);
-         background-size: cover;
-         background-repeat: no-repeat;
-         background-position: center;
-         background-attachment: fixed;
+         background: #20DFDF;
      }
      .title{
          text-align: center;
@@ -23,6 +19,39 @@
          padding: 15px 12px;
          font-size: 50px;
          }
+         .shoot {
+          background: url(./fire.gif) no-repeat;
+          src: url(./fire.gif);
+          background-size: cover;
+         background-position: center;
+         text-align: center;
+         height: 100%;
+         width: 100%;
+         display: table;
+         vertical-align: middle;
+     }
+     .idle {
+          background: url(./main.png) no-repeat;
+          src: url(./main.png);
+          background-size: cover;
+         background-position: center;
+         text-align: center;
+         height: 100%;
+         width: 100%;
+         display: table;
+         vertical-align: middle;
+     }
+     .break {
+          background: url(./fail.gif) no-repeat;
+          src: url(./fail.gif;);
+          background-size: cover;
+         background-position: center;
+         text-align: center;
+         height: 100%;
+         width: 100%;
+         display: table;
+         vertical-align: middle;
+     }
      p {font-size: 50px;
      font-family: 'VT323', monospace;
      }
@@ -57,8 +86,8 @@
 <font size="10"><h1>Russian Roulette</h1></font>
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
   <tbody><tr>
-    <td><img border="0" src="roulette.jpg" width="100%" height="100%" alt="Revolver"></td>
-    <td>
+    <td style="width: 500px; height: 500px;"><iframe id="base" style="border: none; width: 500px; height: 500px;" class="idle"></iframe></td>
+      <td>
 
       <div class="custom-select" style="width:200px;">
 <form name="fire">
@@ -74,13 +103,13 @@
 <p>
 <audio id="fireit()" src="revolver.ogg" preload="auto"></audio>
 <audio id="fail()" src="fail.ogg" preload="auto"></audio>
-<input class="btn" name="message" type="button" value="Play Roulette" onclick="fireit()">
+<input id="message" class="btn" name="fire" type="button" value="Play Roulette" onclick="fireit()">
+
 </p>
 
 </form>
-
 </div>
-           
+
 <script>
 
 //Russian Roulette Game- by Daffa Ahmad Ibrahim (https://github.com/Daffabot)
@@ -89,21 +118,35 @@
 
 function fireit(){
 var theone=Math.floor(Math.random()*6)
+var base = document.getElementById("base");
 
 if (theone<=document.fire.bullets.value-1)
 setTimeout(() => {
-  document.getElementById('fireit()').play();
+  document.getElementById("fireit()").play();
+  base.classList.remove("idle");
+	base.classList.add("shoot");
 }, 100)
 if (theone<=document.fire.bullets.value-1)
 setTimeout(() => {
+base.classList.remove("shoot");
+base.classList.add("idle");
+}, 900)
+if (theone<=document.fire.bullets.value-1)
+setTimeout(() => {
 alert("Dor!!!. Kamu mati!");
-}, 500)
-else{
+}, 1000)
+else {
+setTimeout(() => {
+document.getElementById("fail()").play();
+base.classList.remove("idle");
+base.classList.add("break");
+}, 1)
+setTimeout(() => {
+base.classList.remove("break");
+base.classList.add("idle");
+}, 1000)
 document.fire.message.value="Whew. Selamat!"
 setTimeout("document.fire.message.value='Play Roulette'",600)
-setTimeout(() => {
-  document.getElementById('fail()').play();
-}, 1)
 }
 }
 </script>
@@ -116,4 +159,4 @@ setTimeout(() => {
 </tbody>
      </table>
 </body>
-</html>
+</html> 
