@@ -1,7 +1,7 @@
 # Russian-Roulette Javascript
 Game russian roulette HTML and Javascript created and developed by Daffa Ahmad Ibrahim
 
-![alt text](https://daffabot.github.io/russian-roulette.github.io/roulette.jpg)
+![revolver](https://daffabot.github.io/russian-roulette.github.io/image/roulette.jpg)
 
 ## Demo
 You can <a href="https://daffabot.github.io/russian-roulette.github.io">Click here</a> for demo.
