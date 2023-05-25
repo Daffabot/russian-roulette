@@ -3,24 +3,23 @@
 //Credit must stay intact for use
 
 function fireit(){
-var theone=Math.floor(Math.random()*6)
+var spin = Math.floor(Math.random()*6);
 var base = document.getElementById("base");
 
-if (theone<=document.fire.bullets.value-1)
+if (spin<=document.fire.bullets.value-1) {
 setTimeout(() => {
-  document.getElementById("fireit()").play();
-  base.classList.remove("idle");
-	base.classList.add("shoot");
+document.getElementById("fireit()").play();
+base.classList.remove("idle");
+base.classList.add("shoot");
 }, 100)
-if (theone<=document.fire.bullets.value-1)
 setTimeout(() => {
 base.classList.remove("shoot");
 base.classList.add("idle");
 }, 900)
-if (theone<=document.fire.bullets.value-1)
 setTimeout(() => {
 alert("Dor!!!. Kamu mati!");
 }, 1000)
+}
 else {
 setTimeout(() => {
 document.getElementById("fail()").play();
