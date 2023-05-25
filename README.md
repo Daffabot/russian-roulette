@@ -9,29 +9,20 @@ You can <a href="https://www.daffabot.my.id/russian-roulette">Click here</a> for
 ## How to install
 1. Clone repository
 ```bash
-git clone https://github.com/Daffabot/russian-roulette.github.io.git
+git clone https://github.com/Daffabot/russian-roulette.git
 ```
 2. Open russian-roulette/index.html file in your browser
 
 ## Example Usage
 ```javascript
 function fireit(){
-var theone=Math.floor(Math.random()*6)
+var spin = Math.floor(Math.random()*6);
 
-if (theone<=document.fire.bullets.value-1)
-setTimeout(() => {
-  document.getElementById('fireit()').play();
-}, 100)
-if (theone<=document.fire.bullets.value-1)
-setTimeout(() => {
-alert("Dor!!!. Kamu mati!").play();
-}, 500)
+if (spin<=document.fire.bullets.value-1) {
+//Use code to declare defeat
+}
 else{
-document.fire.message.value="Whew. Selamat!"
-setTimeout("document.fire.message.value='Play Roulette'",600)
-setTimeout(() => {
-  document.getElementById('fail()').play();
-}, 1)
+//Use code to declare a win
 }
 }
 ```
