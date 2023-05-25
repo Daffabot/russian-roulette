@@ -11,26 +11,26 @@ setTimeout(() => {
 document.getElementById("fireit()").play();
 base.classList.remove("idle");
 base.classList.add("shoot");
-}, 100)
+}, 100);
 setTimeout(() => {
 base.classList.remove("shoot");
 base.classList.add("idle");
-}, 900)
+}, 900);
 setTimeout(() => {
 alert("Dor!!!. Kamu mati!");
-}, 1000)
+}, 1000);
 }
 else {
 setTimeout(() => {
 document.getElementById("fail()").play();
 base.classList.remove("idle");
 base.classList.add("break");
-}, 1)
+}, 1);
 setTimeout(() => {
 base.classList.remove("break");
 base.classList.add("idle");
-}, 1000)
-document.fire.message.value="Whew. Selamat!"
-setTimeout("document.fire.message.value='Play Roulette'",600)
+}, 1000);
+document.fire.message.value = "Whew. Selamat!";
+setTimeout("document.fire.message.value='Play Roulette'",600);
 }
 }
