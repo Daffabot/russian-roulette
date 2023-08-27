@@ -1,60 +1,61 @@
 <!DOCTYPE html PUBLIC “-//W3C//DTD XHTML 1.0 Transitional//EN” “http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd”>
-<html xmlns=”http://www.w3.org/1999/xhtml” lang="id">
-     <head><meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-	  <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/Daffabot/Daffabot.github.io/master/image/favicon.ico"> 
-<title>Russian Roulette by Daffabot</title>
-	         <link rel="stylesheet" href="./css/style.css">
-<link as="image" rel="image preload" href="./image/fire.gif" type="image/gif">
-<link as="image" rel="image preload" href="./image/fail.gif" type="image/gif">
-<link as="image" rel="image preload" href="./image/main.png" type="image/png">
-	         <link rel="stylesheet" href="./css/game.css">
-</head>
-<body>
-	<div class="container">
-<table border="0" cellspacing="0" cellpadding="0">
-  <tbody>
-  <tr>
-  <th colspan="2">
-  <h1>Russian Roulette</h1>
-  </th>
-  </tr>
-  <tr>
-    <td class="frame-img"><iframe id="base" class="idle"></iframe></td>
-      <td>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/Daffabot/Daffabot.github.io/master/image/favicon.ico" />
+    <title>Russian Roulette by Daffabot</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link as="image" rel="image preload" href="./image/fire.gif" type="image/gif" />
+    <link as="image" rel="image preload" href="./image/fail.gif" type="image/gif" />
+    <link as="image" rel="image preload" href="./image/main.png" type="image/png" />
+    <link rel="stylesheet" href="./css/game.css" />
+  </head>
+  <body>
+    <section class="container">
+      <table border="0" cellspacing="0" cellpadding="0">
+        <tbody>
+          <tr>
+            <th colspan="2">
+              <h1>Russian Roulette</h1>
+            </th>
+          </tr>
+          <tr>
+            <td class="frame-img"><iframe id="base" class="idle"></iframe></td>
+            <td>
+              <div class="custom-select" style="width: 100px">
+                <form name="fire">
+                  <p>Jumlah peluru yang akan dimuat (1-6):</p>
+                  <br /><select name="bullets" id="bullets" type="text" value="1" title="Peluru yang dimuat">
+                    <option value="1" selected="">1 Peluru</option>
+                    <option value="2">2 Peluru</option>
+                    <option value="3">3 Peluru</option>
+                    <option value="4">4 Peluru</option>
+                    <option value="5">5 Peluru</option>
+                    <option value="6">6 Peluru</option>
+                  </select>
+                  <br />
 
-      <div class="custom-select" style="width:100px;">
-<form name="fire">
-<p>Jumlah peluru yang akan dimuat (1-6):</p><br><select name="bullets" id="bullets" type="text" value="1" title="Peluru yang dimuat"><option value="1" selected="">1 Peluru</option>
-<option value="2">2 Peluru</option>
-<option value="3">3 Peluru</option>
-<option value="4">4 Peluru</option>
-<option value="5">5 Peluru</option>
-<option value="6">6 Peluru</option>
-</select>
-<br>
+                  <p>
+                    <audio id="fireit()" src="./sound/revolver.ogg" preload="auto"></audio>
+                    <audio id="fail()" src="./sound/fail.ogg" preload="auto"></audio>
+                    <input id="message" class="btn" name="fire" type="button" value="Play Roulette" onclick="fireit()" />
+                  </p>
+                </form>
+              </div>
 
-<p>
-<audio id="fireit()" src="./sound/revolver.ogg" preload="auto"></audio>
-<audio id="fail()" src="./sound/fail.ogg" preload="auto"></audio>
-<input id="message" class="btn" name="fire" type="button" value="Play Roulette" onclick="fireit()">
-
-</p>
-
-</form>
-</div>
-
-<script src="./js/game.js"></script>
-<br>
-<p align="center">Game ini dibuat oleh</p>
-<a href="https://github.com/Daffabot" target="_blank" rel="noopener"><p>Daffabot</p></a>
-<br>
-	<a href="./index.html" class="cta"><button class="btnprime"><p>Home</p></button></a>
-<br>
-</td>
-  </tr>
-</tbody>
-     </table>
-	 </div>
-</body>
-</html> 
+              <script src="./js/game.js"></script>
+              <br />
+              <p align="center">
+                Game ini dibuat oleh <a href="https://github.com/Daffabot" target="_blank" rel="noopener"><p>Daffabot</p></a>
+              </p>
+              <br />
+              <a href="./index.html" class="cta"><button class="btnprime"><p>Home</p></button></a>
+              <br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </body>
+</html>
