@@ -126,3 +126,9 @@ select#bullets {
   border-radius: 20px;
   padding: 0;
 }
+
+@media (max-width: 960px) {
+  .idle {
+    width: 50vw;
+  }
+}
