@@ -128,7 +128,9 @@ select#bullets {
 }
 
 @media (max-width: 960px) {
-  .idle {
+  .idle,
+  .shoot,
+  .break {
     width: 50vw;
   }
 }
